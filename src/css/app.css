@@ -1,0 +1,29 @@
+@import"dashboard.css";
+body{
+    background: #063970;
+}
+
+.login{
+    margin-top: 200px;
+}
+
+.title{
+    text-align: center;
+}
+
+
+.content-login{
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+}
+
+.form{
+    width: 90%;
+    margin: auto;
+}
+
+.register-login{
+    text-decoration: none;
+    color: rgb(177, 168, 168);
+}

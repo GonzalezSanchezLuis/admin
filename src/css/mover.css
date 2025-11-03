@@ -1,0 +1,42 @@
+body {
+    background: #063970;
+}
+
+.mover-information {
+    text-align: center;
+    margin-top: 250px;
+}
+
+.mover-information h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.mover-inf {
+    width: 80%;
+    margin: auto;
+}
+
+.form-edit-mover {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-edit {
+    width: 30%;
+}
+
+.mover-active {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #00FA9A;
+}

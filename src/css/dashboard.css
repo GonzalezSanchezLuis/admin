@@ -1,0 +1,20 @@
+body {
+    background: #063970;
+}
+
+.container-dasboard{
+    width: 80%;
+    height: auto;
+    margin: 150px auto;
+}
+.cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.card{
+    width: 40%;
+    height: auto;
+}

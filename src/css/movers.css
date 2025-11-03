@@ -1,0 +1,23 @@
+body{
+    background:#063970;
+}
+
+.movers-register {
+    width: 80%;
+    margin: 150px auto;
+    height: auto;
+}
+
+.form-control {
+    width: 60%;
+    margin: auto;
+}
+
+.movers {
+    margin-top: 30px;
+}
+
+.mover-edit {
+    color: yellow;
+    text-decoration: none;
+}
