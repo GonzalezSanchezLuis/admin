@@ -14,15 +14,15 @@
             <div class="login">
                 <h3 class="title">Login</h3>
                 <div class="content-login">
-                        <form class="form">                         
+                        <form class="form" id="login-form">                         
                             <div class="input-group input-group-lg input-group mb-3">
-                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="username" id="username">
                             </div>
                             <div class="input-group input-group-lg input-group mb-3">
-                                <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="password" id="password">
                             </div>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-success" type="button">Ingresar</button>
+                                <button class="btn btn-success" type="submit">Ingresar</button>
                             </div>
                             <br>
 
@@ -31,11 +31,13 @@
                             </div>
 
                         </form>
+                        <p id="error-message" style="color: red; display: none;">Usuario o contraseña incorrectos.</p>
                 </div>
             </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script type="module" src="js/controller/loginController.js"></script>
 </body>
 </html>

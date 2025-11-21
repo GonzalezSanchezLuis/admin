@@ -35,3 +35,7 @@ body{
     border-radius: 10px;
     background: #00FA9A;
 }
+.form-edit-user .mt-5.d-block {
+    flex-basis: 100%;
+    width: 100%;
+}

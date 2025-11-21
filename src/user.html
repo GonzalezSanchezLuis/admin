@@ -13,40 +13,32 @@
         <div class="user-information">
             <h1>Información del usuario</h1>
             <div class="user-inf">              
-                <form class="form-edit-user">
-                    <div class="user-active">
+                <form class="form-edit-user" id="user-form-edit">
+                    <div class="user-active" id="user-status-container">
                         <div class="text-active">
                             <p>Activar o bloquer usuario</p>
                         </div>
                         <div class="button-active">
                             <div class="form-check form-switch form-check-reverse">
-                                <input class="form-check-input" type="checkbox" id="switchCheckReverse">
+                                <input class="form-check-input" type="checkbox" id="user-active-switch" name="activateDeactivate">
                             </div>
                         </div>
                     </div>
                     <div class="form-floating mb-3 input-edit">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <input type="text" class="form-control" id="user-fullname-input" placeholder="name@example.com">
+                        <label for="floatingInput">Nombre</label>
                     </div>
                     <div class="form-floating mb-3 input-edit">
-                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <input type="email" class="form-control" id="user-email-input" placeholder="Password">
+                        <label for="floatingPassword">Email</label>
                     </div>
                     <div class="form-floating mb-3 input-edit">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <input type="text" class="form-control" id="user-document-input" placeholder="name@example.com" >
+                        <label for="floatingInput">Documento</label>
                     </div>
                     <div class="form-floating mb-3 input-edit">
-                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
-                    </div>
-                    <div class="form-floating mb-3 input-edit">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                    </div>
-                    <div class="form-floating mb-3 input-edit">
-                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <input type="text" class="form-control" id="user-phone-input" placeholder="Password">
+                        <label for="floatingPassword">Número de telefono</label>
                     </div>
                     <div class="form-floating mb-3 input-edit">
                         <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -56,15 +48,15 @@
                         <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Password</label>
                     </div>
-                    <div class="form-floating mb-3 input-edit">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                
+                    <input type="hidden" id="user-id" name="userId">
+                    <div class="mt-5 d-block">
+                        <button class="btn btn-lg btn-success" type="submit">
+                            <i class="fas fa-save"></i> Guardar Información
+                        </button>
                     </div>
-                    
                 </form>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start ">
-                    <button class="btn btn-lg btn-success me-md-2" type="button"><i class="fas fa-save"></i> Guardar Información</button>
-                </div>
+                
             </div>
         </div>
 
@@ -73,5 +65,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script type="module" src="js/controller/users/userController.js"></script>
 </body>
 </html>
