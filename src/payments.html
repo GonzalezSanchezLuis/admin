@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/movers.css">
-    <title>Movers</title>
+    <title>Pagos </title>
 </head>
 <body>
     <div class="movers-register">
@@ -19,33 +19,27 @@
             <option value="Chicago">
         </datalist>
         <div class="movers">
-                        <th scope="col">Nombre</th>
             <table class="table table-dark table-hover">
                 <thead class="table-light">
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Documento</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Télefono</th>
-                        <th scope="col">Fecha de registro</th>
-                        <th scope="col">Tipo de vehículo</th>
-                        <th scope="col">Placa</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Acciones</th>
+                        <th scope="col">Mover</th>
+                        <th scope="col">Saldo pendiente</th>
+                        <th scope="col">Banco / metodo</th>
+                        <th scope="col">Número de cuenta</th>
+                        <th scope="col">Pagar</th>
                     </tr>
                 </thead>
-                <tbody id="movers-table-body">
-                    <tr>                    
-                    </tr>   
+                <tbody id="movers-table-payments">
+                    <tr>
+                    </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/5f3e6e66d9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-        <script type="module" src="./js/controller/movers/listMoverController.js"></script>
-        
+        <script type="module" src="./js/controller/payment/paymentsController.js"></script>
 </body>
 </html>

@@ -9,7 +9,6 @@ export function getFormData() {
         driverId: moverIdInput.value ? parseInt(moverIdInput.value) : null,
         name: form.elements['name'].value, 
         email: form.elements['email'].value 
-        // Nota: Si estuvieras editando, agregarías aquí el ID oculto.
     };
 }
 
@@ -23,7 +22,6 @@ export function fillFormForEdit(user) {
 
 export function clearForm() {
     form.reset();
-    // Restaura el botón a su estado de "Agregar"
     formSubmitButton.textContent = 'Guardar Usuario';
 }
 

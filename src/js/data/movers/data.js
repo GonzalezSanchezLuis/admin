@@ -13,7 +13,7 @@ function getHeaders() {
 
 export async function getMovers() {
     try {
-        const response = await fetch(`${API_BASE_URL}/admin/drivers/list/drivers`, {
+        const response = await fetch(`${API_BASE_URL}/drivers/admin/list/drivers`, {
             method: 'GET',
             headers: getHeaders()
         });
@@ -39,7 +39,7 @@ export async function getMovers() {
 
 export async function getMoverById(id) {
    try {
-    const response = await fetch(`${API_BASE_URL}/admin/drivers/${id}/driver`,{
+    const response = await fetch(`${API_BASE_URL}/drivers/admin/${id}/driver`,{
         method:"GET",
         headers: getHeaders()
     });

@@ -54,9 +54,9 @@ async function loadMoveData(userId) {
             }
             console.log(mover.driver)
 
-            const driverData = mover.driver;
+            const driverData = mover.driverData;
 
-            moveIdInput.value = mover.userId;
+            moveIdInput.value = mover.id;
             fullNameInput.value = mover.fullName;
             emailInput.value = mover.email;
             documentInput.value = mover.document;
