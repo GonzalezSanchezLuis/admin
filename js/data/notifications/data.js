@@ -1,5 +1,5 @@
-const API_BASE_URL = 'http://localhost:8080/api/v1/admin';
-//const API_BASE_URL = 'https://api.heimapp.com.co/api/v1/admin';
+//const API_BASE_URL = 'http://localhost:8080/api/v1/admin';
+const API_BASE_URL = 'https://api.heimapp.com.co/api/v1/admin';
 
 function getHeaders() {
     // const token = getAuthToken(); // Si necesitas autenticación, descomenta esto
